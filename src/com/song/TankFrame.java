@@ -49,14 +49,7 @@ public class TankFrame extends Frame {
         myTank.paint(g);
         for (int i = 0;i<bullents.size();i++) {
             bullents.get(i).paint(g);
-            try {
-                if(bullents.get(i).getX()<0||bullents.get(i).getX()>800||bullents.get(i).getY()<0||bullents.get(i).getY()>600) {
-                    bullents.remove(bullents.get(i));
-                }
 
-            }catch (Exception e){
-                throw e;
-            }
         }
     }
     class MyKeyListener extends KeyAdapter {
